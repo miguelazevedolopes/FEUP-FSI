@@ -27,8 +27,8 @@
 
 ### Bibliografia
 
-`1` https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2020-0688
-`2` https://nvd.nist.gov/vuln/detail/CVE-2020-0688#vulnCurrentDescriptionTitle
-`3` https://securityaffairs.co/wordpress/108946/hacking/vulnerable-exchange-servers.html
-`4` https://www.zerodayinitiative.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys
-`5` https://www.logpoint.com/en/blog/microsoft-exchange-server-rce-vulnerability/
+`1` https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2020-0688 <br /> 
+`2` https://nvd.nist.gov/vuln/detail/CVE-2020-0688#vulnCurrentDescriptionTitle <br /> 
+`3` https://securityaffairs.co/wordpress/108946/hacking/vulnerable-exchange-servers.html <br /> 
+`4` https://www.zerodayinitiative.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys <br /> 
+`5` https://www.logpoint.com/en/blog/microsoft-exchange-server-rce-vulnerability/ <br /> 
