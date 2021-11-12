@@ -1,9 +1,8 @@
-
 # Trabalho realizado na Semana #3
 
 ## Identificação 
 
-- Microsoft Exchange Validation Key Remote Code Execution Vulnerability (`1`)
+- CVE-2020-0688: Microsoft Exchange Validation Key Remote Code Execution Vulnerability (`1`)
 - Remote code execution vulnerability were identified in Microsoft Exchange Server (`1`)
 - Occurs when the server fails to properly create unique keys at install (`1`)
 
