@@ -1,12 +1,20 @@
 ## Task 1
 
+<img src="./screenshots/logbook3-task1.png">
+
 ## Task 2
 
-The first program that is given prints a list of environment variables. 
+The first program that is given prints a list of environment variables.
+
+<img src="./screenshots/logbook3-task2-1.png">
 
 After commenting the printenv() line on the child process case and uncommenting the same line in the parent process case, the program also printed a list of environment variables.
 
+<img src="./screenshots/logbook3-task2-2.png">
+
 After using the diff command to compare both output files we arrived at the conclusion that child and parent processes share the same environment variables.
+
+<img src="./screenshots/logbook3-task2-3.png">
 
 ## Task 3
 
@@ -28,5 +36,4 @@ After checking all the environment variables we observed that both the PATH and 
 
 ## Task 6
 
-We were able to run a program (not a malicious one ? i don't know how to write one :D). I think it was running with root privileges, but I'm not sure. 
-
+We were able to run a program (not a malicious one ? i don't know how to write one :D). I think it was running with root privileges, but I'm not sure.
