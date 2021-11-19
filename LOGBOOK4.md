@@ -1,5 +1,7 @@
 ## Task 1
 
+As suggested we experimented with listing environment variables and setting and unsetting variables.
+
 [Screenshot - Task 1](/screenshots/logbook4-task1.png)
 
 ## Task 2
