@@ -2,6 +2,8 @@
 
 <img src="./screenshots/logbook3-task1.png">
 
+<a src="./screenshots/logbook3-task1.png"></a>
+
 ## Task 2
 
 The first program that is given prints a list of environment variables.
