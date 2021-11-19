@@ -44,6 +44,6 @@ After checking all the environment variables we observed that both the PATH and 
 
 ## Task 6
 
-We compiled the program given to us, changed its ownership to root and made it a Set-UID program. Because we changed the PATH environment variable, by adding the /home/seed directory, when we ran the program given, we were able to run an alternative program also named ls that we wrote ourselves.
+We compiled the program given to us, changed its ownership to root and made it a Set-UID program. Because we changed the PATH environment variable, by adding the /home/seed directory, when we ran the program given, we were able to run an alternative program also named ls that we wrote ourselves and placed on the /home/seed directory.
 
 [Screenshot - Task 6](/screenshots/logbook4-task6.png)
