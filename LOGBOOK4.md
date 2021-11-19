@@ -1,8 +1,6 @@
 ## Task 1
 
-<img src="./screenshots/logbook4-task1.png">
-
-<a src="./screenshots/logbook4-task1.png">Screenshot 1</a>
+[Screenshot - Task 1](/screenshots/logbook4-task1.png)
 
 ## Task 2
 
