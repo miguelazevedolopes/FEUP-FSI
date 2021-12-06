@@ -30,15 +30,13 @@ After running our exploit we ran the stack-L1 program and verified that the expl
 
 [Logbook 5 - Task 3 - Part 3](/screenshots/logbook5-task3-3.png)
 
------------------------------
+## CTF
 
-## CTF - Week 5
-
-### 1st Challenge
+### Challenge 1
 
 First we analysed the program, and found that a 28 character long string was being written into a string variable with an allocated memory of only 20 characters. By inputting 20 random characters followed by "flag.txt", we were able to overwrite the contents of the meme_file variable and consequently access the contents of the flag.txt file.
 
-### 2nd Challenge
+### Challenge 2
 
 The difference from the 1st challenge, was that in the second challenge, changing the value of meme_file variable wasn't enough. First we needed to overwrite a flag variable so that the content of the flag was 0xfefc2122, and only after that, could we overwrite the meme_file variable with the path to the flag file (flag.txt). In order to do this we wrote a python script that creates a 32 byte array (32 is the length scanned by the program), placed the flag after the 20 bytes used to fill the buffer and immediately after we placed the flag's path ("flag.txt").
 
