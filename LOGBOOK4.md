@@ -49,3 +49,14 @@ After checking all the environment variables we observed that both the PATH and 
 We compiled the program given to us, changed its ownership to root and made it a Set-UID program. Because we changed the PATH environment variable, by adding the /home/seed directory, when we ran the program given, we were able to run an alternative program also named ls that we wrote ourselves and placed on the /home/seed directory.
 
 [Screenshot - Task 6](/screenshots/logbook4-task6.png)
+
+
+## CTF
+
+### Challenge 1
+
+As suggested we browsed through the website until we found the version of wordpress that was being used, as well as the versions of the plug-ins. After a few Google searches we found a CVE in the WooCommerce Booster Plugin 5.4.3. We then looked for exploits in the exploit-db.com website and found one that after the executing provided us with a link that would grant us admin access to the website.
+
+## Challenge 2
+
+After having admin website, we accessed the private post and the flag to solve the second challenge.

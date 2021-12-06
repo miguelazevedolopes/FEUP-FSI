@@ -52,7 +52,6 @@ content = bytearray(0x0 for i in range(N))
 number  = 0xfefc2122
 content[20:24]  =  (number).to_bytes(4,byteorder='little')
 content[24:32] = ("flag.txt").encode('latin-1')
-print(content)
 DEBUG = False
 
 if DEBUG:
