@@ -3,6 +3,7 @@
 As suggested we got familiar with the database in question
 
 [Logbook 8 - Task 1](/screenshots/logbook8-task1.png)
+
 [Logbook 8 - Task 1 - Full Table](/screenshots/logbook8-task1extra.png)
 
 ## Task 2.1
@@ -45,6 +46,7 @@ In order to change the admin's salary we used injection to add an extra line to 
 ```', salary='9999999```
 
 [Logbook 8 - Task 3.1](/screenshots/logbook8-task3-1.png)
+
 [Logbook 8 - Task 3.1 - Changed Salary](/screenshots/logbook8-task3-1extra.png)
 
 ## Task 3.2
