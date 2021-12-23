@@ -56,3 +56,17 @@ To change other people's salary we needed to ignore the ID verification. So, we 
 ```', salary='1' where name='Boby';#```
 
 [Logbook 8 - Task 3.2](/screenshots/logbook8-task3-2.png)
+
+## CTF
+
+### Challenge 1
+
+This challenge was similar to what we did in the practical class. To solve the challenge we commented the password verification with the # symbol. To be more precise, we entered a random password and the following contents in the username textbox:
+
+```admin';#```
+
+### Challenge 2
+
+In this challenge, we realized that the ping service, which was available to unauthorized users was done using the ping command in Linux. We took advantage of that and added an extra command after the ping, that allowed us to read the contents of the flag. First we pinged a random host (1.1.1.1) and then we read the contents of the flag with the cat command. This was what we wrote in the ping textbox:
+
+```1.1.1.1 & cat /flag.txt```
