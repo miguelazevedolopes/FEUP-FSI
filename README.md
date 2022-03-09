@@ -1,3 +1,5 @@
+Logbooks (and some screenshots) of the work done in the pratical classes of the FSI class (Security Fundamentals).
+
 - Turno: L03
 - Grupo: G01
 
